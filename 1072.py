@@ -52,4 +52,4 @@ testCases = [
 ]
 
 for case in testCases:
-    pritn(maxEqualRowsAfterFlips(testCases))
+    print(maxEqualRowsAfterFlips(testCases))
