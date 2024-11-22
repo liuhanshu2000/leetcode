@@ -26,7 +26,7 @@ Explanation: After flipping values in the first two columns, the last two rows h
 
 from collections import Counter
 
-def maxEqualRowsAfterFlips(self, matrix: list[list[int]]) -> int:
+def maxEqualRowsAfterFlips(matrix: list[list[int]]) -> int:
     # convert each row into tuple, where each value is the continuous num of either 1 or 0 
     def get_pattern(row):
         pattern = []
@@ -52,4 +52,4 @@ testCases = [
 ]
 
 for case in testCases:
-    print(maxEqualRowsAfterFlips(testCases))
+    print(maxEqualRowsAfterFlips(case))
